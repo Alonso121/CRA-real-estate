@@ -11,11 +11,11 @@ import {
 import { menuData } from "../../data/MenuData";
 import { Button } from "../Button/ButtonElements";
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <Nav>
       <Logo to="/">Infinity</Logo>
-      <MenuBars />
+      <MenuBars onClick={toggle} />
       <NavMenu>
         {menuData.map((item) => (
           <NavMenuLink to={item.link} key={item.title}>
