@@ -1,8 +1,10 @@
 import { useState } from "react";
 
-import Dropdown from "./components/Dropdown";
-import Navbar from "./components/Navbar";
 import GlobalStyle from "./GlobalStyles";
+import Navbar from "./components/Navbar";
+import Dropdown from "./components/Dropdown";
+import Hero from "./components/Hero";
+import { SliderData } from "./data/SliderData";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +18,7 @@ function App() {
       <GlobalStyle />
       <Navbar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
+      <Hero slides={SliderData} />
     </>
   );
 }

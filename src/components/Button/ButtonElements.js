@@ -7,7 +7,7 @@ export const Button = styled(Link)`
   outline: none;
   border: none;
   min-width: 100px;
-  max-width: 200px;
+  max-width: ${({ medium }) => (medium ? "160px" : "200px")};
   cursor: pointer;
   text-decoration: none;
   transition: 0.3s;

@@ -1,7 +1,0 @@
-{
-  "compilerOptions": {
-    "lib": ["es6", "esnext"] // or whatever in there, just not "dom"
-    // intellisense will show you all the possible entries
-  },
-  "exclude": ["node_modules", "**/node_modules/*"]
-}
